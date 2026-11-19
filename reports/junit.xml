@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="13" failures="2" errors="0" time="2.635">
+  <testsuite name="Testes de pedidos" errors="0" failures="2" skipped="0" timestamp="2026-11-18T16:01:37" time="2.428" tests="13">
+    <testcase classname="Testes de pedidos Buscar pedido existente" name="Testes de pedidos Buscar pedido existente" time="0.002">
+    </testcase>
+    <testcase classname="Calculo de frete O valor do frete deve ser positivo" name="Calculo de frete O valor do frete deve ser positivo" time="0.001">
+    </testcase>
+    <testcase classname="Rastreio de Frete Deve validar o formato do código de rastreio" name="Rastreio de Frete Deve validar o formato do código de rastreio" time="0.001">
+    </testcase>
+    <testcase classname="Gestão de carrinho Incluir novo item no carrinho" name="Gestão de carrinho Incluir novo item no carrinho" time="0.001">
+    </testcase>
+    <testcase classname="Gestão de carrinho Deve executar um erro ao adicionar item com quantidade inválida" name="Gestão de carrinho Deve executar um erro ao adicionar item com quantidade inválida" time="0.014">
+    </testcase>
+    <testcase classname="Consulta de preços Não deve retornar o preço do produto" name="Consulta de preços Não deve retornar o preço do produto" time="0.512">
+      <failure>Error: thrown: &quot;Produto não encontrado&quot;
+    at _getError (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1985:12)
+    at Array.map (&lt;anonymous&gt;)
+    at makeSingleTestResult (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1915:38)
+    at makeTestResults (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1945:26)
+    at makeRunResult (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1876:18)
+    at run (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:797:35)
+    at runAndTransformResultsToJestFormat (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:2300:21)
+    at jestAdapter (C:\curso\testes\node_modules\jest-circus\build\runner.js:111:19)
+    at runTestInternal (C:\curso\testes\node_modules\jest-runner\build\index.js:247:16)
+    at runTest (C:\curso\testes\node_modules\jest-runner\build\index.js:315:7)
+
+[cause]: Error: thrown: &quot;Produto não encontrado&quot;
+    at C:\curso\testes\src\basico\pedidos\pedidos.test.js:58:3
+    at _dispatchDescribe (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:626:26)
+    at describe (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:594:44)
+    at Object.&lt;anonymous&gt; (C:\curso\testes\src\basico\pedidos\pedidos.test.js:57:1)
+    at ModuleExecutor.exec (C:\curso\testes\node_modules\jest-runtime\build\index.js:3055:26)
+    at CjsLoader.loadModule (C:\curso\testes\node_modules\jest-runtime\build\index.js:440:36)
+    at CjsLoader.requireModule (C:\curso\testes\node_modules\jest-runtime\build\index.js:335:12)
+    at Runtime.requireModule (C:\curso\testes\node_modules\jest-runtime\build\index.js:4981:27)
+    at jestAdapter (C:\curso\testes\node_modules\jest-circus\build\runner.js:96:13)
+    at runTestInternal (C:\curso\testes\node_modules\jest-runner\build\index.js:247:16)
+    at runTest (C:\curso\testes\node_modules\jest-runner\build\index.js:315:7)</failure>
+    </testcase>
+    <testcase classname="Consulta de preços Deve retornar o preço do produto" name="Consulta de preços Deve retornar o preço do produto" time="0.511">
+    </testcase>
+    <testcase classname="Consulta de preços Deve fazer a acertiva com resolves" name="Consulta de preços Deve fazer a acertiva com resolves" time="0.512">
+    </testcase>
+    <testcase classname="Consulta de preços Deve fazer com async/await" name="Consulta de preços Deve fazer com async/await" time="0.516">
+    </testcase>
+    <testcase classname="Cálculo do desconto Deve retornar o default se não souber o que fazer" name="Cálculo do desconto Deve retornar o default se não souber o que fazer" time="0">
+    </testcase>
+    <testcase classname="Cálculo do desconto Deve calcular a aliquota baseado no valor" name="Cálculo do desconto Deve calcular a aliquota baseado no valor" time="0">
+    </testcase>
+    <testcase classname="Cálculo do desconto Deve validar as iterações com o mock" name="Cálculo do desconto Deve validar as iterações com o mock" time="0.001">
+      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
+
+Expected number of calls: 1
+Received number of calls: 0
+    at Object.&lt;anonymous&gt; (C:\curso\testes\src\basico\pedidos\pedidos.test.js:101:18)
+    at Promise.finally.completed (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1834:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1774:10)
+    at _callCircusTest (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1167:40)
+    at _runTestInContext (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1103:3)
+    at runTestWithContext (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:996:5)
+    at _runTestsForDescribeBlockOnce (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1008:11)
+    at _runTestsForDescribeBlock (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:824:5)
+    at _runTestsForDescribeBlockOnce (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:1003:11)
+    at _runTestsForDescribeBlock (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:824:5)
+    at run (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:789:3)
+    at runAndTransformResultsToJestFormat (C:\curso\testes\node_modules\jest-circus\build\jestAdapterInit.js:2300:21)
+    at jestAdapter (C:\curso\testes\node_modules\jest-circus\build\runner.js:111:19)
+    at runTestInternal (C:\curso\testes\node_modules\jest-runner\build\index.js:247:16)
+    at runTest (C:\curso\testes\node_modules\jest-runner\build\index.js:315:7)</failure>
+    </testcase>
+    <testcase classname="Cálculo do desconto Deve permitir aplicar uma lógica no mock" name="Cálculo do desconto Deve permitir aplicar uma lógica no mock" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
