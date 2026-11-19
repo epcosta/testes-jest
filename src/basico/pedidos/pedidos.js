@@ -30,9 +30,14 @@ export const consultaPrecoProduto = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const produto = pedidosAtivos.find((p) => p.id === id);
+      if (id == 31) console.log(id, " ########################## ", produto);
       if (produto) {
         resolve(produto.valor);
       } else {
+        console.log(
+          "Produto não encontrado ##########################",
+          produto,
+        );
         reject("Produto não encontrado");
       }
     }, 500);
